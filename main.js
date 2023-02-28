@@ -5,7 +5,7 @@ let attempts = 1;
 
 btnGuess.addEventListener("click", handleGuessClick);
 btnReset.addEventListener("click", handleResetClick);
-console.log(randomNum)
+
 function handleGuessClick(event) {
     event.preventDefault();
 
@@ -23,7 +23,7 @@ function handleGuessClick(event) {
 function handleResetClick() {
     togglePage();
     attempts = 1;
-    // randomNum = Math.round(Math.random() * 10);
+    randomNum = Math.round(Math.random() * 10);
 };
 
 function togglePage() {
@@ -34,4 +34,3 @@ function togglePage() {
 // todo:
 // add a limit to accept only nums btw 0 and 10
 // keep the btnGuess from counting the click when there is no input
-// bug - randomNum not resetting
