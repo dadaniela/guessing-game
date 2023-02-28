@@ -11,18 +11,19 @@
 </head>
 <body>
         <main>
-            <div class="page1 hide">
+            <div class="page1">
                 <h1>Guessing Game</h1>
                 <p>Guess a number between 0 and 10</p>
             <form>
-                <input type="number">
-                <button>Tentar</button>
+                <input id="inputNumber" type="number">
+                <button id="btn-guess">Guess</button>
             </form>
             </div>
-            <div class="page2">
+            <div class="page2 hide">
                 <h2>You got it right in xx attemps</h2>
-                <button>Play again</button>
+                <button id="btn-reset">Play again</button>
             </div>
         </main>
+        <script src="./main.js"></script>
 </body>
 </html>
